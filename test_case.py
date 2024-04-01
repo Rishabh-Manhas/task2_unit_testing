@@ -3,7 +3,7 @@ import requests
 
 class TestWebsiteLoading(unittest.TestCase):
     def test_website_loading(self):
-        url = "https://atg.world"
+        url = "https://atgworld"
         print("Attempting to connect to:", url)
         response = requests.get(url, timeout=10)
         if response.status_code == 200:
