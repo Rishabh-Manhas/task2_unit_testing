@@ -30,8 +30,8 @@ Now Jenkins uses port 8080 by default, so to access Jenkins GUI from web browser
 	1. Create a inbound security rule in the security group of EC2 instance in AWS and open a 	Custom TCP port 8080 to be accessed from anywhere.
 	2. Now we can access jenkins from our web browser using url:
 		http://<ip_address_ec2>:8080/
-(Note: I wasn't able to use the subdomain because I don't have any paid domain, so instead I've just provided the exact url.)
-  3. Now install the suggested plugins during the first login, it'll install most of the plugins that we need to use for this project.
+  
+  	3. Now install the suggested plugins during the first login, it'll install most of the plugins that we need to use for this project.
 	4. After this just create a Pipeline project and choose "Pipeline script from SCM" option
 	and just provide the github repository link where Defined Pipeline is stored with name "Jenkinsfile".
 	5. Provide the credential if the repo is private otherwise skip this step.
